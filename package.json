@@ -1,0 +1,28 @@
+{
+  "name": "nikitagupta0908.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaGupta0908/NikitaGupta0908.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaGupta0908/NikitaGupta0908.github.io/issues"
+  },
+  "homepage": "https://github.com/NikitaGupta0908/NikitaGupta0908.github.io#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
