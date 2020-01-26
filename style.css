@@ -41,6 +41,7 @@ ul {
 }
 .avtar{
   border-radius: 100%;
+  height: 80%;
 }
 .flex-container{
   display: flex;
@@ -50,8 +51,7 @@ ul {
   flex-direction: column;
 }
 
-
-h4{
+.title{
   text-align: center;
 }
 @media screen and (min-width: 600px) {
@@ -100,4 +100,12 @@ h4{
   background: #E4F1FE;
   color: green;
   
+}
+
+.about-me{
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+
+    flex-wrap: wrap;
 }
