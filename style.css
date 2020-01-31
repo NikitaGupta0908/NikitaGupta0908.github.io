@@ -1,20 +1,19 @@
-/* .int{
-    top: 0;
-}  */
+body{
+  background-color: pink;
+  margin:0;
 
-#navbar{
-  top: 0;
-  background-color: #1a659e;
 }
-ul {
+#navbar{
+  background-color: #1E76B9;
+}
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0;
   }
   
   li {
@@ -26,90 +25,85 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: yellowgreen;
+  }
+
+  #welcome-section{
+    margin-top:0;
+    display: flex;
+    height: 100vh;
+  }
+  #contact{
+    display: flex;
+    height: 50vh;
+    padding: 20px;
+    background-color: #004e89;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  #profiles{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #efefd0;
+  
   }
   
-  .active {
-    background-color: #4CAF50;
-  }
-
-#welcome-section{
-  top: 0;
-  height: 100vh;
-  background-color: #004e89;
-}
-.avtar{
-  border-radius: 100%;
-  height: 80%;
-}
-.flex-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.title{
-  text-align: center;
-}
-@media screen and (min-width: 600px) {
-  div.example {
-    font-size: 80px;
-  }
-  .flex-two{
-    display: flex;
-    height: 30vh;
-    background-color: #C2F9A4;
-    justify-content: space-between;
-    align-items: center;
+  .text{
     padding: 20px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
+   @media screen and (min-width: 600px) {
+    #navbar li a {
+      font-size: 20px;
+      padding: 30px;
+    }
+    #welcome-section{
+      flex-direction: row;
+    }
+    #welcome-section .text
+    {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex: 1;
+    }
+    #welcome-section .image
+    {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex: 1;  
+    }
+    #profile-link{
+        margin: 4%;
+    }
   }
-}
-.project-tile{
-  flex:1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.thumb{
-  height: 200px;
-  width: 300px;
-}
-#profiles{
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #C2F9A4;
-
-}
-#profile-link{
-  margin: 4%;
-}
-
-#profile-link:hover {
-  background: #E4F1FE;
-  color: green;
   
-}
-
-.about-me{
-    display: flex;
-    padding-right: 10%;
-    padding-left: 10%;
-
-    flex-wrap: wrap;
-}
+  @media screen and (max-width: 600px) {
+   #navbar li a{
+      font-size: 20px;
+      padding: 20px 10px;
+    }
+    #welcome-section{
+      flex-direction: column;
+    }
+    #welcome-section .text
+    {
+      flex: 1;
+      order: 2;
+    }
+    #welcome-section .image
+    {
+      flex: 1;  
+      order: 1;
+    }
+  }
+  
