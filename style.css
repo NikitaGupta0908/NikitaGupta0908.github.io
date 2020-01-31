@@ -108,5 +108,8 @@ body{
       flex: 1;  
       order: 1;
     }
+    #profile-link{
+      height: 45%;
+  }
   }
   
