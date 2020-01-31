@@ -59,7 +59,10 @@ body{
   .text{
     padding: 20px;
   }
-
+  .t{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
    @media screen and (min-width: 600px) {
     #navbar li a {
       font-size: 20px;
