@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D3 Bar Charts</title>
+        <!------- including d3 v5 ----------------------------->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        
+        <!-- including CSS files : custom and bootstrap ------------------->
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!--- metadata file ---------------------------------------------->
+        <script type="text/javascript" src="metadata/metadata.js"></script>
+        <meta charset="utf-8">
+
+    </head>
+    
+    <body>
+
+        <!------------------------- Bootstrap navbar ------------------------------>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Movies Data Visualization</a>
+        </nav>
+        
+        <!-------------------- A parent container to adjust elements --------------->
+        <div id="parent" class="container-fluid">
+            
+            <!--------------------a dropdown to handle input------------------------>
+            <div class="select-styling">
+                <select id="selectButton"></select>   
+                <div id="info"></div> 
+                <div id="bins"></div>
+            </div>
+            
+            <!-- this is the div where the chart will be displayed-->
+            <div id="chart"></div>
+            
+            <!--  including all the D3 files ----------------------->
+            <script src="JSfiles/helperfunctions.js"></script>
+            <script src="JSfiles/barchart.js"></script>
+            <script src="JSfiles/histogram.js"></script>
+            <script src="JSfiles/chart.js"></script>
+
+        </div>
+    </body>
+</html>
