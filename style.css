@@ -4,7 +4,7 @@ body{
 
 }
 #navbar{
-  background-color: #1E76B9;
+  background-color: #004e89;
 }
   ul {
     list-style-type: none;
@@ -63,10 +63,28 @@ body{
     font-size: medium;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+  #projects{
+    height: 100vh;
+    background-color: #038989;
+    display: flex;
+    padding-top: 50px;
+    padding: 40px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img-top{
+    height: 100%;
+    width: 100;
+  }
+  
    @media screen and (min-width: 600px) {
     #navbar li a {
       font-size: 20px;
       padding: 30px;
+    }
+    .card-columns {
+      column-count: 3;
     }
     #welcome-section{
       flex-direction: row;
@@ -111,5 +129,13 @@ body{
     #profile-link{
       height: 45%;
   }
+    /* phones */
+    .card-columns {
+      column-count: 1;
+    }
+    #projects{
+      margin-top: 50px;
+    }
   }
   
+ 
