@@ -15,7 +15,9 @@ body{
     position: -webkit-sticky; 
     position: sticky;
   }
-  
+  .white{
+    color: white
+  }
   li {
     float: right;
     padding-right: 5%;
