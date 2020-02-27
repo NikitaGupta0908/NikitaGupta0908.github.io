@@ -77,7 +77,9 @@ body{
     height: 100%;
     width: 100;
   }
-  
+  .card-text-description{
+    font-size: smaller;
+  }
    @media screen and (min-width: 600px) {
     #navbar li a {
       font-size: 20px;
