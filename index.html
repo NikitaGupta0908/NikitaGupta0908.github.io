@@ -8,18 +8,21 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">	
 	</head>
 	<body>
-		
-		<ul id='navbar'>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#projects">Work</a></li>
-			<li><a href="#welcome-section">About</a></li>
-		</ul>
 
+		<!-- Navbar -->
+		<ul id='navbar' class="container-fluid nav-pills nav-fill justify-content-center">
+            <li class="nav-item brand"><a href="#" class="nav-link"><b>Nikita Gupta</b></a></li>
+                <li class="nav-item links"><a class="nav-link" href="#welcome-section">About</a></li>
+                <li class="nav-item links"><a class="nav-link" href="#projects">Work</a></li>
+                <li class="nav-item links"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item links"><a class="nav-link" href="#profiles">Contact Me!</a></li>
+        </ul>
 
+		<!-- welcome section -->
 		<div class="container">
 			<div id="welcome-section">	
 				<div class="text">
-					<h2>Hi! I am Nikita. <br> I am a Web Developer.</h2> 
+					<h2>Hi! I am Nikita. <br> I am a Web Developer. I love exploring new technologies, implementing them and then writing about them so I can help the community. My primary interests are budding front-end technologies, data science and visualization, database technologies, technical documentation and full stack development.</h2> 
 				</div>
 				<div class="image">
 					<div class="container">
@@ -28,17 +31,20 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Projects -->
 		<div id="projects" class="container-fluid">
-			<br>
+			<br><br><br>
 				<h3><b class="white">Projects</b> <br>
-					<div class="container py-5 bg-faded">
+					<div class = "container">
+					<div class="container py-3 bg-faded">
 						<div class="card-columns">
 							
 							<div class="container">
 								<div class="card init">
 								  <img class="card-img-top" src="https://drive.google.com/uc?id=1l8KBeEoEoH6kBp03xzTuCmlGoBDOlTpN" alt="Card image" style="width:100%">
 								  <div class="card-body">
-									<h4 class="card-title">D3 Visualization</h4>
+									<h4 class="card-title">D3.js Basic Interface</h4>
 									<h6>A D3 project to visualise data in an interactive way.<h6>
 									<a href="project1/index.html" class="btn btn-primary">Click to know more!</a>
 								 </div>
@@ -48,11 +54,11 @@
 
 						   <div class="container">
 								<div class="card init">
-								  <img class="card-img-top" src="https://drive.google.com/uc?id=1VRBiaBEOLLwOSSMCgRyHIF-N6Sx07Guj" alt="Card image" style="width:100%">
+								  <img class="card-img-top" src="https://drive.google.com/uc?id=1ucTvZKAZq8wJru2chDtlhZ6JsmWqRfJv" alt="Card image" style="width:100%">
 								  <div class="card-body">
-									<h4 class="card-title">Fest Website</h4>
-									<h6>Static website developed in HTML, CSS and JS.</h6>
-									<a href="project2/index.html" class="btn btn-primary">Click to know more!</a>
+									<h4 class="card-title">Movies Dataset Visualisation</h4>
+									<h6>Data science + Data visualization using D3.js for front end and flask (Python) for backend server.</h6>
+									<a href="https://www.youtube.com/watch?v=3Td5Ut3yAXQ" class="btn btn-primary">Click to know more!</a>
 								 </div>
 								</div>
 								<br>
@@ -72,22 +78,100 @@
 
 						</div>
 					</div>
-				</h3>
-		</div>
+				</div>
 	
-			<div id="contact">
 				<br>
-				<h3><b>Contact Me</b> <br>
+				<div class="container py-3 bg-faded">
+					<div class="card-columns">
+						
+						<div class="container">
+							<div class="card init">
+							  <img class="card-img-top" src="https://drive.google.com/uc?id=1i0I_oCr_k52JOP0qbIDDk9e5mP0A09nn" alt="Card image" style="width:100%">
+							  <div class="card-body">
+								<h4 class="card-title">React Fetching Data from REDDIT API</h4>
+								<h6>A React project with technical documentation to fetch data from a Reddit API.<h6>
+								<a href="https://github.com/nikitagupta0809/ReactFetchingData" class="btn btn-primary">Click to know more!</a>
+							 </div>
+							</div>
+							<br>
+						</div>  
+
+					   <div class="container">
+							<div class="card init">
+							  <img class="card-img-top" src="https://drive.google.com/uc?id=1VRBiaBEOLLwOSSMCgRyHIF-N6Sx07Guj" alt="Card image" style="width:100%">
+							  <div class="card-body">
+								<h4 class="card-title">Fest Website</h4>
+								<h6>Static website developed in HTML, CSS and JS.</h6>
+								<a href="project2/index.html" class="btn btn-primary">Click to know more!</a>
+							 </div>
+							</div>
+							<br>
+						</div> 
+
+					   <div class="container">
+							<div class="card init">
+							  <img class="card-img-top" src="https://drive.google.com/uc?id=1v1_2o0kmxlijW4GQKbgVQJXl4jPAgMOT" alt="Card image" style="width:100%">
+							  <div class="card-body">
+								<h4 class="card-title">House Price Prediction</h4>
+								<h6>A data science project to predict house prices in Python.</h6>
+								<a href="https://www.kaggle.com/nikitagupta09/house-price-prediction-gradient-boosting-ll" class="btn btn-primary">Click to know more!</a>
+							 </div>
+							</div>
+							<br>
+						</div>    
+
+					</div>
+				</div>
+		</div>
+		
+		<!-- publications -->
+		<div id="publications">
+			<div class="container">
+				<h3><b>Publications</b> <br>
 					<br>
 					<div class="t">
-						TA for the Undergraduate course: CS 305 <br>
-						Name: Nikita Gupta<br>
-						Email: nikigupta@cs.stonybrook.edu<br>
-						Office Hours: 6 pm - 7 pm Tuesday @NCS<br>
-					</div>
-				</h3>
+						<div class="list-group">
+							
+							<a href="http://www.jetir.org/papers/JETIR1905673.pdf" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+							  <div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">LOAD BALANCING: A Classic Technique For Resource Management</h5>
+								<small>May 9, 2019 (JETIR)</small>
+							  </div><br>
+							  <p class="mb-1">Paper aims at cloud computing - an inevitable asset and one of the emerging areas in the field of
+								information technology (IT)</p>
+							  <small>Load balancing is a classic technique used to balance out the workload among various nodes for better utility and resource management, thus increasing the efficiency of the system.</small>
+							</a>
+
+							<a href="https://www.linkedin.com/pulse/getting-started-web-development-nikita-gupta/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+							  <div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">Getting Started with Web Development
+								</h5>
+								<small class="text-muted">March 14, 2020 (LinkedIn)</small>
+							  </div><br>
+							  <p class="mb-1">Article for all web development enthusiasts confused about where to start.</p>
+							  <small class="text-muted">This article aims at providing you with a learning track you can follow in order to efficiently begin learning web development. Let's dive in!</small>
+							</a>
+
+							<a href="https://medium.com/@nikitagupta0809/my-journey-from-new-delhi-to-new-york-a20bd3ab0dc4" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+							  <div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">My Journey — From New Delhi to New York</h5>
+								<small class="text-muted">June 29, 2019 (Medium)</small>
+							  </div><br>
+							  <p class="mb-1">Article trying to help all the students out there who already have plans about going for a Master's degree abroad or are just thinking about the same.</p>
+							  <small class="text-muted">This is my personal experience as I have devoted the last year to the same. I am trying to explain the various steps involved in the process of applying for a Master's degree abroad (more pertinent to the USA but similar for other countries too). </small>
+							</a>
+
+
+						  </div>
+					</div></h3>
 			</div>
-			<div id="profiles">
+		</div>
+			
+		<!-- profiles -->
+
+		<div id="profiles">
+			<div class="container">
+				<h3><b class="white">Profiles</b> <br><br><br>
 				<a id="profile-link" class="img-fluid" href="https://github.com/nikitagupta0809" target="_blank">
 				<img src="https://drive.google.com/uc?id=1d1Abwk2GGxGrxORu5exz4hKOAnv5o9ar" alt="github"/>
 				</a>
@@ -98,5 +182,7 @@
 				<img src="https://drive.google.com/uc?id=1qXt1rv51utNG1aEYRkyWfoNL0FUr-tM7" alt="linkedin"/>
 				</a>
 			</div>
+		</div>
+
 	</body>
 </html>
