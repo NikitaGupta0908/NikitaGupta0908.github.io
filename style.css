@@ -5,13 +5,27 @@ body{
 }
 /* animated wallpaper */
 .wrapper{
-  position: absolute;
+  /* position: absolute; */
+
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
+
+  font-family: 'Raleway', sans-serif;
+  /* padding: 3em 2em; */
+  font-size: 18px;
+  color: #aaa;
 }
-h2{
+
+.content{
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* h2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,7 +35,7 @@ h2{
   color: white;
   text-transform: uppercase;
   margin: 0;
-}
+} */
 .box div{
   position: absolute;
   width: 60px;
@@ -99,9 +113,9 @@ h2{
   font-size: large !important;
 }
 #navbar{
-  background-color: transparent;
+  /* background-color: transparent; */
 
-  /* background-color: rgba(0,0,0,0.7); */
+  background-color: rgba(0,0,0,0.3);
   height: 90px;
   display: flex;
   align-items: center;
@@ -137,7 +151,6 @@ h2{
   }
   #welcome-section{
     display: flex;
-    height: 100vh;
     align-items: center;
     justify-content: center;
   }
@@ -178,6 +191,41 @@ h2{
   .t{
     font-size: medium;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #skills{
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* padding: 40px; */
+    color: black;
+        /* justify-content: flex-start;
+    align-items: flex-start; */
+  }
+  .row{
+    display: flex;
+    flex-direction: row
+  }
+  .web{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  }
+  .db{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .prog{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #projects{
     height: 120vh;

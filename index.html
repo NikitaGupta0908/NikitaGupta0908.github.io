@@ -6,21 +6,46 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">	
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+		<script src="script.js"></script>
+		<!-- Load d3.js -->
+		<script src="https://d3js.org/d3.v4.js"></script>
+
+
 	</head>
 	<body>
 
 
 
 		<div class="wrapper">
-					<!-- Navbar -->
-		<ul id='navbar' class="container-fluid nav-pills nav-fill justify-content-center">
-            <li class="nav-item brand"><a href="#" class="nav-link"><b>Nikita Gupta</b></a></li>
-                <li class="nav-item links"><a class="nav-link" href="#welcome-section">About</a></li>
-                <li class="nav-item links"><a class="nav-link" href="#projects">Work</a></li>
-                <li class="nav-item links"><a class="nav-link" href="#publications">Publications</a></li>
-                <li class="nav-item links"><a class="nav-link" href="#profiles">Contact Me!</a></li>
-        </ul>
-			<h2>Animated wallpaper</h2>
+			<!-- Navbar -->
+			<ul id='navbar' class="container-fluid nav-pills nav-fill justify-content-center">
+				<li class="nav-item brand"><a href="#" class="nav-link"><b>Nikita Gupta</b></a></li>
+					<li class="nav-item links"><a class="nav-link" href="#content">About</a></li>
+					<li class="nav-item links"><a class="nav-link" href="#skills">Skills</a></li>					
+					<li class="nav-item links"><a class="nav-link" href="#projects">Work</a></li>
+					<li class="nav-item links"><a class="nav-link" href="#publications">Publications</a></li>
+					<li class="nav-item links"><a class="nav-link" href="#profiles">Contact Me!</a></li>
+			</ul>
+			<!-- welcome section -->
+			<div class="container content">
+				<div class="image">
+					<div class="container">
+						<img src="https://drive.google.com/uc?id=15OVH05opFb_7nn4KJDVS0Qv92piYz7Ry" alt="my picture" class="rounded-circle"/>
+					</div>
+				</div>
+				
+				<div class="text">
+					<h1>Hi! I am Nikita. I am a
+						<span
+							class="txt-rotate"
+							data-period="2000"
+							data-rotate='[ "UI Developer.", "Data Analyst.", "Software Engineer."]'></span>
+						</h1>
+						<h2>Looking forward to expand my skillset.</h2>
+				</div>	
+			</div>
+		
 			<div class="box">
 				<div></div>
 				<div></div>
@@ -34,21 +59,36 @@
 				<div></div>
 			</div>
 		</div>
-		<!-- welcome section -->
-		<div class="container">
-			
-			<div id="welcome-section">
-				<div class="image">
-					<div class="container">
-						<img src="https://drive.google.com/uc?id=15OVH05opFb_7nn4KJDVS0Qv92piYz7Ry" alt="my picture" class="rounded-circle"/>
-					</div>
+
+
+		<br>
+		<!-- Skills -->
+		<div id="skills" class="container">
+			<h3><b>Skills</b> <br>
+			<div class="row">
+				<div class="web">
+					<h5>Web Stack: </h5>
+					<h6>MongoDB + ExpressJS + ReactJS + NodeJS</h6>
+					<div id="my_dataviz"></div>
 				</div>
-				
-				<div class="text">
-					<p>Hi! I am Nikita. I am a Web Developer. I love exploring new technologies, implementing them and then writing about them so I can help the community. My primary interests are budding front-end technologies, data science and visualization, database technologies, technical documentation and full stack development.</p> 
+				<div class="prog">
+					<h5>Programming Languages:</h5>
+					<h6>Java + Python + C++ + JavaScript</h6>
+					<div id="prog"></div>
 				</div>
-				
+				<div class="db">
+					<h5>Database Technologies</h5>
+					<div id="barchart"></div>
+				</div>
 			</div>
+			<div class="row">
+<!-- 				
+				<div class="db">
+					<h5>Data Science</h5>
+					<div id="barchart"></div>
+				</div>		 -->
+			</div>
+
 		</div>
 
 		<!-- Projects -->
@@ -212,6 +252,10 @@
 				</a>
 			</div>
 		</div>
+		<script src="d3 files/tooltip.js"></script>
+		<script src="d3 files/proglang.js"></script>
+		<script src="d3 files/web.js"></script>
+		<script src="d3 files/db.js"></script>
 
 	</body>
 </html>
