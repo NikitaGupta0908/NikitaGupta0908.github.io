@@ -161,7 +161,7 @@ body{
     display: flex;
     height: 50vh;
     padding: 20px;
-    background-color: #004e89;
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
     color: white;
     justify-content: center;
     align-items: center;
@@ -181,7 +181,7 @@ body{
     align-items:center;
     justify-content: center;
     height: 50vh;
-    background-color:  rgba(9,9,121,1);
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
   
   }
   
@@ -229,7 +229,7 @@ body{
   }
   #projects{
     height: 120vh;
-    background-color:rgba(9,9,121,1);
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
     display: flex;
     padding-top: 50px;
     padding: 40px;
