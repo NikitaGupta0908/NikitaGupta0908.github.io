@@ -181,7 +181,7 @@ body{
     align-items:center;
     justify-content: center;
     height: 50vh;
-    background-color:  #004e89;
+    background-color:  rgba(9,9,121,1);
   
   }
   
@@ -229,7 +229,7 @@ body{
   }
   #projects{
     height: 120vh;
-    background-color: #038989;
+    background-color:rgba(9,9,121,1);
     display: flex;
     padding-top: 50px;
     padding: 40px;
