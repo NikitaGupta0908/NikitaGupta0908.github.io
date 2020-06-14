@@ -163,14 +163,14 @@ body{
     padding: 20px;
     background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
     color: white;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
   }
   #publications{
       display: flex;
       height: 100vh;
       padding: 20px;
-      background-color: #efefd0;
+      background-color: white;
       color: black;
       justify-content: flex-start;
       align-items: center;
@@ -178,13 +178,20 @@ body{
   #profiles{
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-content: center;
     height: 50vh;
-    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
+    background-color:rgba(9,9,121,1); 
   
   }
-  
+  .p1{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .p2{
+    flex:1;
+  }
   .text{
     padding: 20px;
   }
@@ -229,7 +236,7 @@ body{
   }
   #projects{
     height: 120vh;
-    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%); 
+    background-color: rgba(0, 212, 255, 1); 
     display: flex;
     padding-top: 50px;
     padding: 40px;
