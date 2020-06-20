@@ -143,7 +143,8 @@ body{
   }
   
   li a:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
   }
 
   li a:active{
@@ -176,12 +177,12 @@ body{
       justify-content: center;
   }
   #profiles{
-    background-color:rgba(9,9,121,1); 
+    background-color:wheat; 
     width: 100%;
     height: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .cont{
     display: flex;
@@ -191,7 +192,7 @@ body{
     flex:1;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
   .p2{
