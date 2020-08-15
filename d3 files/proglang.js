@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var width = 400
+var width = 
     height = 400
     margin = 20
 
