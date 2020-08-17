@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">	
 		<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400,500,600,700" rel="stylesheet" type="text/css" />
 		<script src="script.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="./assets/circle-progress.js"></script>
+
 		<!-- Load d3.js -->
 		<script src="https://d3js.org/d3.v4.js"></script>
 
@@ -32,15 +35,15 @@
 			<!-- welcome section -->
 				<div class="content">
 					<div class="text">
-						<h1>Hi! I am Nikita.</h1><br>
-						<h1> I am a
+						<p>Hi! I am Nikita.</p><br>
+						<p> I am a
 							<span
 								class="txt-rotate"
 								data-period="2000"
 								data-rotate='[ "UI Developer.", "Data Analyst.", "Software Engineer."]'></span>
-						</h1>
+						</p>
 						<div class="btn-wrapper">
-							<button class="button btn"><a href="https://drive.google.com/file/d/1UOtGKhv4a2wj5We2Q0g0-kL596A0Wp1R/view?usp=sharing" target="_blank">Resume</a></button>
+							<button class="button btn"><a href="./resume.html" target="_blank">Resume</a></button>
 						</div>
 	
 					</div>
@@ -71,29 +74,122 @@
 		<!-- Skills -->
 		<div id="skills" class="container">
 			<h3><b>Skills</b> <br>
-			<!-- <div class="row">
-				<div class="web">
-					<h5>Web Stack: </h5>
-					<h6>MongoDB + ExpressJS + ReactJS + NodeJS</h6>
-					<div id="my_dataviz"></div>
+				<div>
+					<h4>Programming Languages</h4>
+					<div class="row">
+						<div class="progress1 pro" style="height: fit-content;">
+							<h6>Java</h6>
+						</div>
+						<div class="progress2 pro" style="height: fit-content;">
+							<h6>JavaScript</h6>
+						</div>
+						<div class="progress3 pro" style="height: fit-content;">
+							<h6>Python</h6>
+						</div>	
+					</div>
 				</div>
-				<div class="prog">
-					<h5>Programming Languages:</h5>
-					<h6>Java + Python + C++ + JavaScript</h6>
-					<div id="prog"></div>
+
+
+			<div>
+				<h4>Web Development</h4>
+				<div class="row">
+					<div class="progress4 pro" style="height: fit-content;">
+						<h6>NodeJS</h6>
+					</div>
+					<div class="progress5 pro" style="height: fit-content;">
+						<h6>ExpressJS</h6>
+					</div>
+					<div class="progress6 pro" style="height: fit-content;">
+						<h6>ReactJS</h6>
+					</div>	
+					<div class="progress7 pro" style="height: fit-content;">
+						<h6>MongoDB</h6>
+					</div>
 				</div>
-				<div class="db">
-					<h5>Database Technologies</h5>
-					<div id="barchart"></div>
-				</div>
-			</div> -->
-			<!-- <div class="row"> -->
-<!-- 				
-				<div class="db">
-					<h5>Data Science</h5>
-					<div id="barchart"></div>
-				</div>		 -->
 			</div>
+			
+			<div>
+				<h4>Database Technologies</h4>
+				<div class="row">
+					<div class="progress8 pro" style="height: fit-content;">
+						<h6>PostgreSQL</h6>
+					</div>
+					<div class="progress9 pro" style="height: fit-content;">
+						<h6>XML</h6>
+					</div>
+					<div class="progress10 pro" style="height: fit-content;">
+						<h6>Datalog</h6>
+					</div>	
+					
+				</div>
+			</div>
+		
+
+			<script>
+
+				//programming languages
+				const circleProgress1 = new CircleProgress('.progress1')
+				circleProgress1.attr('max', 100)
+							  .attr('value', 80)
+							  .attr('textFormat','percent');				
+				const circleProgress2 = new CircleProgress('.progress2')
+				circleProgress2.attr('max', 100)
+							  .attr('value', 70)
+							  .attr('textFormat','percent');				
+
+				const circleProgress3 = new CircleProgress('.progress3')
+				circleProgress3.attr('max', 100)
+							  .attr('value', 60)
+							  .attr('textFormat','percent');				
+
+
+				// web development skills
+				const circleProgress4 = new CircleProgress('.progress4')
+				circleProgress4.attr('max', 100)
+							  .attr('value', 70)
+							  .attr('textFormat','percent');				
+
+				
+				const circleProgress5 = new CircleProgress('.progress5')
+				circleProgress5.attr('max', 100)
+							  .attr('value', 60)
+							  .attr('textFormat','percent');				
+
+
+				const circleProgress6 = new CircleProgress('.progress6')
+				circleProgress6.attr('max', 100)
+							  .attr('value', 80)
+							  .attr('textFormat','percent');				
+
+
+				const circleProgress7 = new CircleProgress('.progress7')
+				circleProgress7.attr('max', 100)
+							  .attr('value', 50)
+							  .attr('textFormat','percent');				
+
+
+				//db tech
+				const circleProgress8 = new CircleProgress('.progress8')
+				circleProgress8.attr('max', 100)
+							  .attr('value', 80)
+							  .attr('textFormat','percent');				
+
+
+				const circleProgress9 = new CircleProgress('.progress9')
+				circleProgress9.attr('max', 100)
+							  .attr('value', 60)
+							  .attr('textFormat','percent');				
+
+
+				const circleProgress10 = new CircleProgress('.progress10')
+				circleProgress10.attr('max', 100)
+							  .attr('value', 60)
+							  .attr('textFormat','percent');				
+
+
+				
+			
+			</script>
 
 		</div>
 
@@ -197,7 +293,16 @@
 					<br>
 					<div class="t">
 						<div class="list-group">
-							
+							<a href="https://www.linkedin.com/pulse/centering-element-div-solved-nikita-gupta/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">Centering an Element in a Div</h5>
+								  <small>Aug 1, 2020 (LinkedIn.com)</small>
+								</div><br>
+								<p class="mb-1">This is a small article explaining the different ways to center an element in a div.</p>
+								<small>It is accompanied by codepen samples to better understand the syntax.
+								</small>
+							  </a>
+
 							<a href="https://medium.com/ny-healthcare-fights-covid19" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
 								<div class="d-flex w-100 justify-content-between">
 								  <h5 class="mb-1">New York Health Care Fights Covid-19</h5>
