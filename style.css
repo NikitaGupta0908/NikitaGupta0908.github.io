@@ -388,6 +388,9 @@ body{
       background-color: thistle;
       border-radius: 100%;
     }
+    .copyrights{
+      font-size: 16px;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -430,6 +433,9 @@ body{
     /* phones */
     .card-columns {
       column-count: 1;
+    }
+    .copyrights{
+      font-size: 16px;
     }
     /* #projects{
       margin-top: 50px;
