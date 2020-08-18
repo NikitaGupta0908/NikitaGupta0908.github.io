@@ -218,7 +218,10 @@ body{
     /* flex-direction: column; */
     /* background-color: aquamarine; */
   }
-
+.btn-d{
+  background-color: #464646;
+  color: white;
+}
   #welcome-section{
     display: flex;
     align-items: center;
