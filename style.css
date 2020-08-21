@@ -124,6 +124,10 @@ body{
 .links{
   font-size: large !important;
 }
+.text .title-heading{
+  font-size: 50px;
+  font-weight: 600;
+}
 .btn-wrapper{
   display: flex;
   align-items: center;
@@ -408,6 +412,10 @@ body{
      display: none;
       /* font-size: 20px;
       padding: 20px 10px; */
+    }
+    .text .title-heading{
+      font-size: 22px;
+      font-weight: 700;
     }
     .navbar li{
       display: none;
