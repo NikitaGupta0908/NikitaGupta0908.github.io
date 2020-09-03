@@ -398,6 +398,11 @@ body{
     .copyrights{
       font-size: 16px;
     }
+    .mainabout{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+     }
   }
   
   @media screen and (max-width: 600px) {
@@ -423,6 +428,17 @@ body{
     .content{
       flex-direction: column;
       width: 100%;
+    }
+    .maincontent{
+      flex-direction: column-reverse;
+      width: 100%;
+      margin-bottom: 2%;
+    }
+    .textcontent{
+      order: 2;
+    }
+    .photocontent{
+      order: 1;
     }
     .text
     {
@@ -453,4 +469,18 @@ body{
     } */
   }
   
+ #about{
+   margin-top: 4%;
  
+ }
+
+ .textcontent{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+   height: auto;
+ }
+ .photocontent{
+   flex: 1;
+ }
